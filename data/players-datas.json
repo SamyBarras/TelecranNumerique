@@ -1,0 +1,103 @@
+[
+	{
+		"id":"r",
+		"piste" : "percussion",
+		"position" : {
+			"x" : [{
+				"port" :"ableton",
+				"oscpath": "/Volume_Clap",
+				"mapping" : [0,0.5,0.00,0.85]},
+				{
+				"port" :"ableton",
+				"oscpath": "/Volume_Rimshot",
+				"mapping" : [0.5,1,0.00,0.85]}
+			],
+			"y" : [{
+				"port" :"ableton",
+				"oscpath": "/Volume_Hats",
+				"mapping" : [0,0.5,0.00,0.85]},
+				{
+				"port" :"ableton",
+				"oscpath": "/r/y/p",
+				"mapping" : [0.5,1,0.00,0.85]}
+			],
+		},
+		"orientation":{
+			"port" : "reaper",
+			"oscpath": "/fxparam/last_touched/value",
+			"mapping" : [-90,90, 0,127]
+		},
+		"obs_collisions" : {
+			"port" : "ableton",
+			"oscpath" : "/Filter_General",
+			"mapping" : [0,1,0,1]
+		},
+		"superposition" : {
+			"port" : "ableton",
+			"oscpath" : "/Filter_General",
+			"mapping" : [0,1,0,1]
+		}
+	},
+	{
+		"id":"g",
+		"piste" : "sythétiseur",
+		"position" : {
+			"x" : [{
+				"port" :"ableton",
+				"oscpath": "/Decay_Synth",
+				"mapping" : [0,1,10,100]}
+			],
+			"y" : [{
+				"port" :"ableton",
+				"oscpath": "/Filter_Synth",
+				"mapping" : [0,1,40,120]},
+			],
+		},
+		"orientation":{
+			"port" : "ableton",
+			"oscpath": "/Detune_Synth",
+			"mapping" : [-90,90, 0,127]
+		},
+		"obs_collisions" : {
+			"port" : "ableton",
+			"oscpath" : "/Frequence_Shifter_Amount",
+			"mapping" : [0,1,0,1]
+		},
+		"superposition" : {
+			"port" : "ableton",
+			"oscpath" : "/Random_Chance",
+			"mapping" : [0,1,0,1]
+		}
+	},
+	{
+		"id":"b",
+		"piste" : "basse",
+		"position" : {
+			"x" : [{
+				"port" :"ableton",
+				"oscpath": "/LFO_Speed_Bass",
+				"mapping" : [0,1,40,110]}
+			],
+			"y" : [{
+				"port" :"ableton",
+				"oscpath": "/Filter_Bass",
+				"mapping" : [0,1,50,100]},
+			],
+		},
+		"orientation":{
+			"port" : "ableton",
+			"oscpath": "/Motion_Bass",
+			"mapping" : [-90,90, 0,127]
+		},
+		"obs_collisions" : {
+			"port" : "ableton",
+			"oscpath" : "/Distortion_Bass",
+			"mapping" : [0,1,0,1]
+		},
+		"superposition" : {
+			"port" : "ableton",
+			"oscpath" : "/Distortion_Bass",
+			"mapping" : [0,1,0,1]
+		}
+	}
+]
